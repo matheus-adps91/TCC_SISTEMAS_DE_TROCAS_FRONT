@@ -1,6 +1,93 @@
-<form #signupForm="ngForm">
-  <input type="text" #fullName="ngModel" [(ngModel)]="userService.selectUser.fullName" name="fullName" placeholder="Digite o seu nome">
-  <input type="text" #email="ngModel" [(ngModel)]="userService.selectUser.email" name="email" placeholder="Digite o seu email">
-  <input type="password" #password="ngModel" [(ngModel)]="userService.selectUser.password" name="password" placeholder="Digite a sua senha">
-  <input type="submit" value="Sign Up">
-</form>
+<div class="text-center mb-3">
+  <h1>Sistema de Trocas</h1>
+  <a href="#" class="text-center" routerLink="/signin">Log In</a>
+</div>
+
+<hr>
+
+<div class="card border-primary mx-auto mt-4 p-4" style="width: 700px">
+
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" placeholder="Digite o email">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword">Senha</label>
+            <input type="password" class="form-control" placeholder="Digite a Senha">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword">Confirmação da Senha</label>
+            <input type="password" class="form-control" placeholder="Confirme a Senha">
+          </div>
+        </div>
+      
+      
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="name">Nome Completo</label>
+            <input type="text" class="form-control" placeholder="Digite o nome completo">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="gender">Gênero</label>
+            <select name="gender" id="gender" class="form-control">
+              <option value="male">Masculino</option>
+              <option value="female">Feminino</option>
+            </select>
+          </div>
+        </div>
+      
+      
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="inputAddress">Endereço</label>
+            <input type="text" class="form-control" placeholder="Digite o endereço">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputAddress">Complemento</label>
+            <input type="text" class="form-control" placeholder="Digite o complemento">
+          </div>
+        </div>
+      
+      
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+            <select class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-5">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputZip">CEP</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+      
+      
+        <div class="form-row">
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Estou de acordo com as políticas do site
+              </label>
+            </div>
+          </div>
+        </div>
+      
+        
+        <div class="form-row">          
+          <div class="col-md2" style="margin: auto">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>     
+          </div>
+        </div>
+      
+      </form>
+
+</div>
