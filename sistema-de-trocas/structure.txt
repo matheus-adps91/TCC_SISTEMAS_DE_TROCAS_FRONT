@@ -1,0 +1,27 @@
++src
+    +app
+        +header
+            header.component - ts.html.css
+        +home
+            home.component - ts.html.css
+        +user
+            +sign-in
+                sign-in.component - ts.html.css
+            +sign-up
+                sign-up.component - ts.html.css
+        +produdct
+        
+        +search
+            +simpleSearch
+                simpleSearch.component - ts.html.css
+            +parameterSearch
+                parameterSearch.component - ts.html.css
+        +deal
+            deal.component - ts.html.css
+        +shared
+            user.models.ts
+            user.service.ts
+            product.service.ts
+        app.component - ts.html.css
+        app.module.ts
+        app.routes.ts

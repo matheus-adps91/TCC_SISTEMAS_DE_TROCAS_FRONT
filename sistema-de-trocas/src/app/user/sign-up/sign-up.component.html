@@ -1,0 +1,6 @@
+<form #signupForm="ngForm">
+  <input type="text" #fullName="ngModel" [(ngModel)]="userService.selectUser.fullName" name="fullName" placeholder="Digite o seu nome">
+  <input type="text" #email="ngModel" [(ngModel)]="userService.selectUser.email" name="email" placeholder="Digite o seu email">
+  <input type="password" #password="ngModel" [(ngModel)]="userService.selectUser.password" name="password" placeholder="Digite a sua senha">
+  <input type="submit" value="Sign Up">
+</form>
